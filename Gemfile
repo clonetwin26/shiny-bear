@@ -41,3 +41,21 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass', '>= 3.0.0.0'
+gem 'haml-rails'
+gem 'mysql2'
+gem 'therubyracer', :platform=>:ruby
+
+group :development do
+  gem 'html2haml'
+  gem 'rails_layout'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'cucumber-rails', :require=>false
+  gem 'database_cleaner', '1.0.1'
+  gem 'launchy'
+end
+
